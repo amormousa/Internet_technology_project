@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+        <div id="game-wrap">
+            <h1>Rock Paper Scissors</h1>
+
+            <div id="status-container">
+                <h2 id="current-turn">Player 1's Turn</h2>
+                <p id="game-message">Select your move and press confirm!</p>
+            </div>
+
+        </div>
+        <div id="controls">
+            <div class="choice-buttons">
+                <button type="button" class="btn-choice" data-choice="rock">Rock</button>
+                <button type="button" class="btn-choice" data-choice="paper">Paper</button>
+                <button type="button" class="btn-choice" data-choice="scissors">Scissors</button>
+            </div>
+
+            <div class="confirm-area">
+                <button type="button" id="confirm-btn" disabled>Confirm Choice</button>
+            </div>
+        </div>
+
+        <div id="countdown-area" style="display: none;">
+            <h2 id="timer">3</h2>
+        </div>
+
+        <div id="results-area" style="display: none;">
+            <p id="winner-text"></p>
+            <p id="choices-reveal"></p>
+            <button type="button" id="next-round-btn">Play Next Round</button>
+        </div>
+
+        <div id="score-section">
+            <div id="total-score">
+                <h3>Total Score</h3>
+                <p>Player 1: <span id="p1-score">0</span> | Player 2: <span id="p2-score">0</span></p>
+            </div>
+
+                <div id="history-container">
+                <h3>Match History</h3>
+                <ul id="history-list">
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
